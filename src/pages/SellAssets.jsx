@@ -9,8 +9,109 @@ import hp1 from "../assets/hp1.jpg";
 import hp2 from "../assets/hp2.jpg";
 import hp3 from "../assets/hp3.jpg";
 import hp4 from "../assets/hp4.jpg";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const SellAssets = () => {
+  const [formData, setFormData] = useState({
+  company: "",
+  person: "",
+  email: "",
+  phone: "",
+  brand: "",
+  quantity: "",
+  model: "",
+  condition: "",
+  message: "",
+});
+
+const [loading, setLoading] = useState(false);
+
+const [notification, setNotification] = useState({
+  show: false,
+  type: "",
+  message: "",
+});
+const showNotification = (type, message) => {
+  setNotification({
+    show: true,
+    type,
+    message,
+  });
+
+  setTimeout(() => {
+    setNotification({
+      show: false,
+      type: "",
+      message: "",
+    });
+  }, 3000);
+};
+const sendMessage = (e) => {
+  e.preventDefault();
+
+  if (
+    !formData.company ||
+    !formData.person ||
+    !formData.email ||
+    !formData.phone ||
+    !formData.brand ||
+    !formData.quantity ||
+    !formData.model ||
+    !formData.condition ||
+    !formData.message
+  ) {
+    showNotification("error", "Please fill all fields.");
+    return;
+  }
+
+  setLoading(true);
+
+  emailjs
+    .send(
+      "service_kmqww56",
+      "template_bb02pka",
+      {
+        company: formData.company,
+        person: formData.person,
+        email: formData.email,
+        phone: formData.phone,
+        brand: formData.brand,
+        quantity: formData.quantity,
+        model: formData.model,
+        condition: formData.condition,
+        message: formData.message,
+      },
+      "vARhTg6jI9rtgLq_K"
+    )
+    .then(() => {
+      showNotification("success", "Request Sent Successfully!");
+
+      setFormData({
+        company: "",
+        person: "",
+        email: "",
+        phone: "",
+        brand: "",
+        quantity: "",
+        model: "",
+        condition: "",
+        message: "",
+      });
+
+      setLoading(false);
+    })
+    .catch(() => {
+      showNotification("error", "Failed to send request.");
+      setLoading(false);
+    });
+};
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
   return (
     <>
       <Navbar />
@@ -300,106 +401,129 @@ const SellAssets = () => {
     </div>
 
     <div className="mt-14 bg-[#F7FAFF] rounded-3xl p-10 shadow-lg">
+      {notification.show && (
+  <div
+    className={`mb-6 rounded-xl p-4 text-center text-white font-semibold ${
+      notification.type === "success"
+        ? "bg-green-500"
+        : "bg-red-500"
+    }`}
+  >
+    {notification.message}
+  </div>
+)}
 
-      <form className="space-y-6">
-
+<form onSubmit={sendMessage} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
 
           <input
-            type="text"
-            placeholder="Company Name"
-            className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
-          />
+  type="text"
+  name="company"
+  value={formData.company}
+  onChange={handleChange}
+  placeholder="Company Name"
+  className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+/>
 
           <input
-            type="text"
-            placeholder="Contact Person"
-            className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
-          />
+  type="text"
+  name="person"
+  value={formData.person}
+  onChange={handleChange}
+  placeholder="Contact Person"
+  className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+/>
 
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
 
           <input
-            type="email"
-            placeholder="Email Address"
-            className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
-          />
+  type="email"
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+  placeholder="Email Address"
+  className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+/>
 
           <input
-            type="tel"
-            placeholder="Phone Number"
-            className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
-          />
+  type="tel"
+  name="phone"
+  value={formData.phone}
+  onChange={handleChange}
+  placeholder="Phone Number"
+  className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+/>
 
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
 
-          <select className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]">
-
-            <option>Select Brand</option>
-
-            <option>Dell</option>
-
-            <option>HP</option>
-
+<select
+  name="brand"
+  value={formData.brand}
+  onChange={handleChange}
+  className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+>
+            <option value="">Select Brand</option>
+<option value="Dell">Dell</option>
+<option value="HP">HP</option>
           </select>
 
           <input
-            type="number"
-            placeholder="Quantity"
-            className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
-          />
-
+  type="number"
+  name="quantity"
+  value={formData.quantity}
+  onChange={handleChange}
+  placeholder="Quantity"
+  className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+/>
         </div>
 
         <input
-          type="text"
-          placeholder="Laptop Model (Example: Dell Latitude 5400)"
-          className="w-full h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
-        />
+  type="text"
+  name="model"
+  value={formData.model}
+  onChange={handleChange}
+  placeholder="Laptop Model (Example: Dell Latitude 5400)"
+  className="w-full h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+/>
 
-        <select className="w-full h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]">
-
-          <option>Condition</option>
-
-          <option>Excellent</option>
-
-          <option>Good</option>
-
-          <option>Fair</option>
-
-          <option>Not Working</option>
-
-        </select>
+        <select
+  name="condition"
+  value={formData.condition}
+  onChange={handleChange}
+  className="w-full h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
+>
+  <option value="">Condition</option>
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Fair">Fair</option>
+  <option value="Not Working">Not Working</option>
+</select>
 
         <textarea
-          rows="6"
-          placeholder="Additional Details..."
-          className="w-full rounded-xl border border-[#D8E2EF] p-5 resize-none outline-none focus:border-[#0B84FF]"
-        ></textarea>
+  rows="6"
+  name="message"
+  value={formData.message}
+  onChange={handleChange}
+  placeholder="Additional Details..."
+  className="w-full rounded-xl border border-[#D8E2EF] p-5 resize-none outline-none focus:border-[#0B84FF]"
+></textarea>
 
         <div>
-
-          <label className="block mb-3 font-semibold text-[#071423]">
-            Upload Laptop Images
-          </label>
-
-          <input
-            type="file"
-            multiple
-            className="w-full border border-dashed border-[#0B84FF] rounded-xl p-5"
-          />
+          
 
         </div>
 
         <button
-          className="w-full h-[60px] rounded-xl bg-[#0B84FF] hover:bg-[#006FE6] text-white font-semibold transition"
-        >
-          Submit Request
-        </button>
+  type="submit"
+  disabled={loading}
+  className="w-full h-[60px] rounded-xl bg-[#0B84FF] hover:bg-[#006FE6] text-white font-semibold transition disabled:opacity-60"
+>
+  {loading ? "Sending..." : "Submit Request"}
+</button>
 
       </form>
 

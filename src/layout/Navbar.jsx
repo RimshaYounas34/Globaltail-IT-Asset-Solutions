@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FiSearch, FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
 import Logo from "../common/Logo";
 
@@ -52,21 +52,15 @@ const Navbar = () => {
           </nav>
 
           {/* Desktop Right */}
-          <div className="hidden lg:flex items-center gap-6">
-            <FiSearch
-              size={22}
-              className="text-white cursor-pointer hover:text-[#0B84FF] duration-300"
-            />
-
-            <Link
-              to="/sell-assets"
-              className="h-[56px] px-8 rounded-md bg-[#0B84FF] text-white font-semibold flex items-center gap-3 hover:bg-blue-700 duration-300"
-            >
-              SELL YOUR IT ASSETS
-              <FaArrowRight size={14} />
-            </Link>
-          </div>
-
+          <div className="hidden lg:flex items-center">
+  <Link
+    to="/sell-assets"
+    className="h-[56px] px-8 rounded-md bg-[#0B84FF] text-white font-semibold flex items-center gap-3 hover:bg-blue-700 duration-300"
+  >
+    SELL YOUR IT ASSETS
+    <FaArrowRight size={14} />
+  </Link>
+</div>
           {/* Mobile Button */}
 
           <button

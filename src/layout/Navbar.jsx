@@ -19,9 +19,7 @@ const Navbar = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
       <div className="max-w-[1320px] mx-auto px-6">
-
         <div className="h-24 flex items-center justify-between">
-
           {/* Logo */}
           <Logo />
 
@@ -33,9 +31,7 @@ const Navbar = () => {
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 className={({ isActive }) =>
                   `relative text-[16px] font-semibold transition ${
-                    isActive
-                      ? "text-white"
-                      : "text-white hover:text-[#0B84FF]"
+                    isActive ? "text-white" : "text-white hover:text-[#0B84FF]"
                   }`
                 }
               >
@@ -53,14 +49,14 @@ const Navbar = () => {
 
           {/* Desktop Right */}
           <div className="hidden lg:flex items-center">
-  <Link
-    to="/sell-assets"
-    className="h-[56px] px-8 rounded-md bg-[#0B84FF] text-white font-semibold flex items-center gap-3 hover:bg-blue-700 duration-300"
-  >
-    SELL YOUR IT ASSETS
-    <FaArrowRight size={14} />
-  </Link>
-</div>
+            <Link
+              to="/sell-assets"
+              className="h-[56px] px-8 rounded-md bg-[#0B84FF] text-white font-semibold flex items-center gap-3 hover:bg-blue-700 duration-300"
+            >
+              SELL YOUR IT ASSETS
+              <FaArrowRight size={14} />
+            </Link>
+          </div>
           {/* Mobile Button */}
 
           <button
@@ -69,19 +65,14 @@ const Navbar = () => {
           >
             {menuOpen ? <FiX size={30} /> : <FiMenu size={30} />}
           </button>
-
         </div>
 
         {/* Mobile Menu */}
 
         {menuOpen && (
-
           <div className="lg:hidden bg-[#071423] rounded-2xl p-6 mt-2 shadow-xl">
-
             <nav className="flex flex-col gap-6">
-
               {links.map((item) => (
-
                 <NavLink
                   key={item}
                   to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -94,7 +85,6 @@ const Navbar = () => {
                 >
                   {item}
                 </NavLink>
-
               ))}
 
               <Link
@@ -105,13 +95,9 @@ const Navbar = () => {
                 SELL YOUR IT ASSETS
                 <FaArrowRight />
               </Link>
-
             </nav>
-
           </div>
-
         )}
-
       </div>
     </header>
   );

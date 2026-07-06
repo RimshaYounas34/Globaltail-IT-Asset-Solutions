@@ -67,21 +67,24 @@ const WhyChooseUs = () => {
             <img
               src={whyChooseImg}
               alt="Warehouse"
-              className="w-full h-[450px] object-cover rounded-2xl mt-12"
+              className="w-full h-[280px] sm:h-[350px] lg:h-[450px] object-contain rounded-2xl mt-12"
             />
-
-            <div className="absolute -bottom-10 right-0 bg-white rounded-[28px] shadow-xl w-[180px] h-[220px] flex flex-col items-center justify-center">
-              <div className="w-20 h-20 rounded-full bg-[#EEF5FF] flex items-center justify-center">
-                <BsPatchCheckFill className="text-[#0B84FF] text-5xl" />
+            <div
+              className="absolute bottom-3 right-3 lg:-bottom-10 lg:right-0 bg-white rounded-2xl shadow-xl
+w-[130px] h-[165px]
+sm:w-[150px] sm:h-[190px]
+lg:w-[180px] lg:h-[220px]
+flex flex-col items-center justify-center p-3"
+            >
+              <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-[#EEF5FF] flex items-center justify-center">
+                <BsPatchCheckFill className="text-[#0B84FF] text-3xl sm:text-4xl lg:text-5xl" />
               </div>
-
-              <h3 className="mt-5 text-[20px] font-extrabold text-center leading-6">
+              <h3 className="mt-3 text-[12px] sm:text-[16px] lg:text-[20px] font-extrabold text-center leading-tight">
                 QUALITY
                 <br />
                 TESTED
               </h3>
-
-              <p className="mt-4 text-center text-gray-500 text-sm leading-6">
+              <p className="mt-2 text-center text-gray-500 text-[9px] sm:text-xs lg:text-sm leading-4 lg:leading-6">
                 DATA WIPED
                 <br />
                 READY TO DEPLOY

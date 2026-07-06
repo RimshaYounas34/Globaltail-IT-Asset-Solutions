@@ -1,5 +1,5 @@
 import Logo from "../common/Logo";
-
+import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaGlobe } from "react-icons/fa";
 
 import {
@@ -11,14 +11,14 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#061326] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-14">
-        <div className="grid lg:grid-cols-[300px_1fr_1fr_1fr_280px] gap-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-14 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[280px_1fr_1fr_1fr_260px] gap-10">
           {/* Logo */}
 
           <div>
-            <div className="scale-110 origin-left mt-4">
-  <Logo />
-</div>
+            <div className="scale-100 lg:scale-110 origin-left mt-2 lg:mt-4">
+              <Logo />
+            </div>
           </div>
           {/* Company */}
 
@@ -28,8 +28,10 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-4 text-[#B8C4D4] text-[15px]">
-              <li className="hover:text-white cursor-pointer transition">
-                About Us
+              <li>
+                <Link to="/about" className="hover:text-white transition">
+                  About Us
+                </Link>
               </li>
 
               <li className="hover:text-white cursor-pointer transition">
@@ -106,8 +108,7 @@ const Footer = () => {
 
             <div className="space-y-5 text-[#B8C4D4]">
               {/* Email */}
-
-              <div className="flex items-center gap-3">
+              <div className="flex items-start gap-3">
                 <HiOutlineEnvelope className="text-[#0B84FF] text-[20px]" />
                 <span className="hover:text-white transition cursor-pointer">
                   TechKaam@gmail.com
@@ -132,7 +133,7 @@ const Footer = () => {
             </div>
 
             {/* Social Icons */}
-<div className="flex gap-3 mt-5">
+            <div className="flex gap-3 mt-6 flex-wrap">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full border border-[#2B3A4D] hover:bg-[#0B84FF] hover:border-[#0B84FF] transition flex items-center justify-center"
@@ -157,9 +158,8 @@ const Footer = () => {
           </div>
         </div>
         {/* Bottom Bar */}
-
-        <div className="mt-14 pt-7 border-t border-[#1E2D40] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#9CA9BA] text-[14px]">
+        <div className="mt-12 pt-6 border-t border-[#1E2D40] flex flex-col md:flex-row items-center md:justify-between text-center md:text-left gap-4">
+          <p className="text-[#9CA9BA] text-[13px] sm:text-[14px]">
             © 2024 Globaltail. All Rights Reserved.
           </p>
 

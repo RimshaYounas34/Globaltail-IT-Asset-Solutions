@@ -8,15 +8,13 @@ import {
 const Process = () => {
   return (
     <section className="bg-[#F7FAFF] py-10">
-      <div className="max-w-7xl mx-auto px-6">
-
+<div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Heading */}
 
         <p className="uppercase text-[#0B84FF] font-bold text-sm">
           HOW IT WORKS
         </p>
-
-        <h2 className="mt-2 text-[35px] font-bold text-[#071423] leading-tight">
+<h2 className="mt-2 text-[28px] sm:text-[35px] lg:text-[42px] font-bold text-[#071423] leading-tight">
           Our Simple 4 Step Process
         </h2>
 

@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
-    <section className="relative overflow-hidden bg-[#061326] py-14">
-
+<section className="relative overflow-hidden bg-[#061326] py-16 lg:py-20">
       {/* Background Glow */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute -bottom-36 left-1/2 -translate-x-1/2 w-[900px] h-[400px] rounded-full border border-[#0B84FF]"></div>
@@ -12,8 +11,7 @@ const CTA = () => {
         <div className="absolute -bottom-28 left-1/2 -translate-x-1/2 w-[650px] h-[280px] rounded-full border border-[#0B84FF]"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6">
-
+<div className="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-wide">
           LET'S BUILD VALUE TOGETHER
         </p>
@@ -23,7 +21,7 @@ const CTA = () => {
 
 <div>
 
-  <h2 className="text-white text-[35px] lg:text-[30px] font-bold leading-tight">
+<h2 className="text-white text-[30px] sm:text-[38px] lg:text-[48px] font-bold leading-tight">
     Ready to Work With Globaltail?
   </h2>
 
@@ -36,13 +34,12 @@ const CTA = () => {
 
 {/* Right Side */}
 
-<div className="flex flex-wrap gap-5">
-
+<div className="flex flex-col sm:flex-row gap-4">
   {/* Contact Button */}
 
   <Link
   to="/contact"
-  className="bg-[#0B84FF] hover:bg-[#006FE6] transition duration-300 text-white font-semibold h-[58px] px-10 rounded-lg flex items-center gap-3"
+  className="w-full sm:w-auto bg-[#0B84FF] hover:bg-[#006FE6] transition duration-300 text-white font-semibold h-[58px] px-8 rounded-lg flex items-center justify-center gap-3"
 >
   CONTACT US
   <FaArrowRight className="text-sm" />
@@ -52,7 +49,7 @@ const CTA = () => {
 
   <Link
   to="/contact"
-  className="border border-[#5B6472] hover:border-[#0B84FF] hover:bg-[#0B84FF] transition duration-300 text-white font-semibold h-[58px] px-10 rounded-lg flex items-center gap-3"
+  className="w-full sm:w-auto border border-[#5B6472] hover:border-[#0B84FF] hover:bg-[#0B84FF] transition duration-300 text-white font-semibold h-[58px] px-8 rounded-lg flex items-center justify-center gap-3"
 >
   PARTNERSHIP INQUIRY
   <FaArrowRight className="text-sm" />

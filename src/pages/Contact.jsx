@@ -59,17 +59,17 @@ function Contact() {
     setLoading(true);
 
     emailjs
-      .send(
-        "service_kmqww56",
-        "template_bb02pka",
-        {
-          user_name: formData.name,
-          user_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "vARhTg6jI9rtgLq_K"
-      )
+  .send(
+    "service_pksz01e",
+    "template_szg0okj",
+    {
+      user_name: formData.name,
+      user_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    },
+    "50biiev4TaRa0_WRA"
+  )
       .then(() => {
         showNotification("success", "Message Sent Successfully!");
 

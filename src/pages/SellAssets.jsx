@@ -11,6 +11,11 @@ import hp3 from "../assets/hp3.jpg";
 import hp4 from "../assets/hp4.jpg";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import monitor1 from "../assets/monitor1.jpg";
+import monitor2 from "../assets/monitor2.jpg";
+import monitor3 from "../assets/monitor3.jpg";
+import monitor4 from "../assets/monitor4.jpg";
+
 
 const SellAssets = () => {
   const [formData, setFormData] = useState({
@@ -249,6 +254,123 @@ const handleChange = (e) => {
 
           <p className="mt-2 text-[#5B6472]">
             Premium Ultrabook
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+{/* Monitors */}
+
+<section className="bg-white py-20">
+
+  <div className="max-w-7xl mx-auto px-6">
+
+    <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px] text-center">
+      MONITORS
+    </p>
+
+    <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
+      We Buy Monitors
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+
+      {/* Card 1 */}
+
+      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+        <img
+          src={monitor1}
+          alt="Dell Monitor"
+          className="w-full h-[260px] object-cover"
+        />
+
+        <div className="p-6">
+
+          <h3 className="text-[20px] font-bold text-[#071423]">
+            Dell P2419H
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            24" Professional Monitor
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Card 2 */}
+
+      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+        <img
+          src={monitor2}
+          alt="HP Monitor"
+          className="w-full h-[260px] object-cover"
+        />
+
+        <div className="p-6">
+
+          <h3 className="text-[20px] font-bold text-[#071423]">
+            HP EliteDisplay E243
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            Business Monitor
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Card 3 */}
+
+      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+        <img
+          src={monitor3}
+          alt="Lenovo Monitor"
+          className="w-full h-[260px] object-cover"
+        />
+
+        <div className="p-6">
+
+          <h3 className="text-[20px] font-bold text-[#071423]">
+            Lenovo ThinkVision
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            Full HD Monitor
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* Card 4 */}
+
+      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+        <img
+          src={monitor4}
+          alt="LG Monitor"
+          className="w-full h-[260px] object-cover"
+        />
+
+        <div className="p-6">
+
+          <h3 className="text-[20px] font-bold text-[#071423]">
+            LG 24MP400
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            IPS LED Monitor
           </p>
 
         </div>
@@ -532,6 +654,7 @@ const handleChange = (e) => {
   </div>
 
 </section>
+
 
 <CTA />
 

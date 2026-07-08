@@ -2,7 +2,7 @@ import laptopImg from "../assets/Laptop.jpg";
 import desktopImg from "../assets/Desktop.jpg";
 import monitorImg from "../assets/Monitor.jpg";
 import serverImg from "../assets/Server.jpg";
-import accessoriesImg from "../assets/Accesories.jpg";
+import accessoriesImg from "../assets/accesories.jpg";
 import { FiChevronRight } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";

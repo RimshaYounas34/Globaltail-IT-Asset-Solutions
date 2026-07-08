@@ -15,6 +15,10 @@ import monitor1 from "../assets/monitor1.jpg";
 import monitor2 from "../assets/monitor2.jpg";
 import monitor3 from "../assets/monitor3.jpg";
 import monitor4 from "../assets/monitor4.jpg";
+import accesories1 from "../assets/accesories1.jpg";
+import accesories2 from "../assets/accesories2.jpg";
+import accesories3 from "../assets/accesories3.jpg";
+import accesories4 from "../assets/accesories4.jpg";
 
 
 const SellAssets = () => {
@@ -498,6 +502,110 @@ const handleChange = (e) => {
 
   </div>
 
+</section>
+{/* ================= ACCESSORIES ================= */}
+
+<section className="bg-[#F7FAFF] py-20">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px] text-center">
+      ACCESSORIES
+    </p>
+
+    <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
+      We Buy IT Accessories
+    </h2>
+
+    <p className="mt-4 max-w-3xl mx-auto text-center text-[#5B6472] leading-8">
+      We purchase genuine IT accessories in bulk including docking stations,
+      keyboards, mice, chargers and business peripherals.
+    </p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+
+      {/* Card 1 */}
+
+      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <img
+          src={accesories1}
+          alt="Docking Station"
+          className="w-full h-64 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-[#071423]">
+            Docking Stations
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            Dell • HP • Lenovo
+          </p>
+        </div>
+      </div>
+
+      {/* Card 2 */}
+
+      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <img
+          src={accesories2}
+          alt="Keyboard & Mouse"
+          className="w-full h-64 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-[#071423]">
+            Keyboard & Mouse
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            Wired & Wireless
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+
+      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <img
+          src={accesories3}
+          alt="Laptop Chargers"
+          className="w-full h-64 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-[#071423]">
+            Laptop Chargers
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            Original Power Adapters
+          </p>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+
+      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+        <img
+          src={accesories4}
+          alt="Headsets & Webcams"
+          className="w-full h-64 object-cover"
+        />
+
+        <div className="p-6">
+          <h3 className="text-xl font-bold text-[#071423]">
+            Headsets & Webcams
+          </h3>
+
+          <p className="mt-2 text-[#5B6472]">
+            Business Accessories
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 {/* Sell Form */}
 

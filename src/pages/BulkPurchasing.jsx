@@ -17,26 +17,24 @@ const BulkPurchasing = () => {
       <Navbar />
 
       {/* ================= HERO ================= */}
-
-      <section className="bg-[#061326] pt-44 pb-28 overflow-hidden">
+    <section className="bg-[#061326] pt-32 md:pt-40 lg:pt-44 pb-20 md:pb-24 lg:pb-28 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <p className="uppercase tracking-[2px] text-[#0B84FF] font-bold text-sm">
             BULK PURCHASING
           </p>
 
-          <h1 className="mt-5 text-white text-[46px] lg:text-[62px] font-bold leading-tight max-w-4xl">
+          <h1 className="mt-5 text-white text-[34px] sm:text-[42px] lg:text-[62px] font-bold leading-tight max-w-4xl">
             Bulk IT Equipment
             <br />
             Purchasing Solutions
           </h1>
 
-          <p className="mt-7 max-w-2xl text-[#C8D3E2] text-[18px] leading-8">
+          <p className="mt-6 max-w-2xl text-[#C8D3E2] text-[16px] md:text-[18px] leading-7 md:leading-8">
             We help businesses, wholesalers and resellers source premium-quality
             refurbished IT equipment in bulk with dependable service,
             competitive pricing and worldwide delivery.
           </p>
-
-          <div className="mt-10 flex flex-wrap gap-6">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6">
             <Link
               to="/contact"
               className="bg-[#0B84FF] text-white px-7 py-4 rounded-xl font-semibold hover:bg-[#006FE6] transition duration-300"
@@ -58,14 +56,14 @@ const BulkPurchasing = () => {
 
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* IMAGE */}
 
             <div className="relative">
               <img
                 src={bulkImg}
                 alt="Bulk Purchasing"
-                className="rounded-3xl w-full h-[540px] object-cover"
+                className="rounded-3xl w-full h-[280px] sm:h-[420px] lg:h-[540px] object-cover"
               />
 
               {/* Floating Card */}
@@ -157,8 +155,7 @@ const BulkPurchasing = () => {
           <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
             Trusted By Businesses Worldwide
           </h2>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
+<div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-7 mt-12 lg:mt-16">
             <div className="bg-white rounded-3xl shadow-sm hover:shadow-xl transition p-8 text-center">
               <h3 className="text-[50px] font-bold text-[#0B84FF]">5000+</h3>
               <p className="mt-2 text-[#5B6472]">IT Assets Purchased</p>
@@ -198,14 +195,13 @@ const BulkPurchasing = () => {
             We help organizations simplify procurement with reliable inventory,
             competitive pricing and professional logistics support.
           </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
-            <div className="bg-[#F7FAFF] rounded-3xl p-8 hover:shadow-xl transition">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 lg:mt-16">
+            <div className="bg-[#F7FAFF] rounded-3xl p-6 lg:p-8 hover:shadow-xl transition">
               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow">
                 <HiOutlineClipboardDocumentList className="text-[#0B84FF] text-3xl" />
               </div>
 
-              <h3 className="mt-7 text-[22px] font-bold text-[#071423]">
+              <h3 className="mt-7 text-[20px] lg:text-[22px] font-bold text-[#071423]">
                 Large Inventory
               </h3>
 
@@ -263,7 +259,7 @@ const BulkPurchasing = () => {
 
       <section className="bg-[#061326] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left */}
 
             <div>
@@ -271,7 +267,7 @@ const BulkPurchasing = () => {
                 WHY GLOBALTAIL
               </p>
 
-              <h2 className="mt-4 text-[44px] font-bold text-white leading-tight">
+              <h2 className="mt-4 text-[32px] md:text-[44px] font-bold text-white leading-tight">
                 Your Trusted Partner
                 <br />
                 For Bulk IT Procurement
@@ -286,9 +282,8 @@ const BulkPurchasing = () => {
             </div>
 
             {/* Right */}
-
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div className="bg-white rounded-3xl p-8">
+<div className="grid grid-cols-2 gap-4 sm:gap-6">
+              <div className="bg-white rounded-3xl p-5 md:p-8">
                 <h3 className="text-[38px] font-bold text-[#0B84FF]">5000+</h3>
 
                 <p className="mt-2 text-[#071423] font-semibold">
@@ -297,7 +292,7 @@ const BulkPurchasing = () => {
               </div>
 
               <div className="bg-white rounded-3xl p-8">
-                <h3 className="text-[38px] font-bold text-[#0B84FF]">40+</h3>
+                <h3 className="text-[28px] md:text-[38px] font-bold text-[#0B84FF]">40+</h3>
 
                 <p className="mt-2 text-[#071423] font-semibold">
                   Global Markets
@@ -328,12 +323,12 @@ const BulkPurchasing = () => {
 
       <section className="bg-white py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="bg-[#F7FAFF] rounded-[32px] p-12 text-center">
+          <div className="bg-[#F7FAFF] rounded-[32px] p-7 md:p-12 text-center">
             <p className="uppercase tracking-[1px] text-[#0B84FF] font-bold text-sm">
               START TODAY
             </p>
 
-            <h2 className="mt-4 text-[42px] font-bold text-[#071423]">
+            <h2 className="mt-4 text-[30px] md:text-[42px] font-bold text-[#071423]">
               Ready to Source IT Equipment in Bulk?
             </h2>
 

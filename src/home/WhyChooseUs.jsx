@@ -55,33 +55,29 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#F7FAFF] py-10">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#F7FAFF] py-14 md:py-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-6xl mx-auto text-center"></div>
           {/* Left Side */}
-
-          {/* Right Side */}
 
           <div>
             <p className="uppercase tracking-[1px] text-[#0B84FF] font-bold text-sm">
               WHY WORK WITH GLOBALTAIL
             </p>
-
-            <h2 className="mt-3 text-[20px] lg:text-[40px] font-bold text-[#03070c] leading-[1.1]">
+            <h2 className="mt-3 text-[28px] sm:text-[34px] lg:text-[46px] font-bold text-[#03070c] leading-tight">
               Reliable. Responsible. Results Driven.
             </h2>
-
-            <p className="mt-1 max-w-xl text-[15px] leading-7 text-black">
+            <p className="mt-4 max-w-2xl text-[15px] md:text-[16px] leading-8 text-[#040506]">
               We follow a strict refurbishment and quality assurance process to
               ensure every device meets the highest standards before reaching
               our customers.
             </p>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7 mt-12">
               {/* Card 1 */}
               <Link
                 to="/bulk-purchasing"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[0].icon}
@@ -91,14 +87,14 @@ const WhyChooseUs = () => {
                   {features[0].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6 text-[#111827]">
                   {features[0].desc}
                 </p>
               </Link>
               {/* Card 2 */}
               <Link
                 to="/quality-refurbishment"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[1].icon}
@@ -108,7 +104,7 @@ const WhyChooseUs = () => {
                   {features[1].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6 text-[#111827]">
                   {features[1].desc}
                 </p>
               </Link>
@@ -116,7 +112,7 @@ const WhyChooseUs = () => {
               {/* Card 3 */}
               <Link
                 to="/data-security"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[2].icon}
@@ -126,15 +122,15 @@ const WhyChooseUs = () => {
                   {features[2].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6 text-[#111827]">
                   {features[2].desc}
                 </p>
               </Link>
 
               {/* Card 4 */}
-             <Link
+              <Link
                 to="/local-global-delivery"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[3].icon}
@@ -144,14 +140,14 @@ const WhyChooseUs = () => {
                   {features[3].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6 text-[#111827]">
                   {features[3].desc}
                 </p>
               </Link>
               {/* Card 5 */}
               <Link
                 to="/sustainable-approach"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[4].icon}
@@ -161,7 +157,7 @@ const WhyChooseUs = () => {
                   {features[4].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6 text-[#111827]">
                   {features[4].desc}
                 </p>
               </Link>
@@ -169,7 +165,7 @@ const WhyChooseUs = () => {
               {/* Card 6 */}
               <Link
                 to="/competitive-pricing"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[5].icon}
@@ -179,7 +175,7 @@ const WhyChooseUs = () => {
                   {features[5].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6  text-[#111827]">
                   {features[5].desc}
                 </p>
               </Link>
@@ -187,7 +183,7 @@ const WhyChooseUs = () => {
               {/* Card 7 */}
               <Link
                 to="/consistent-supply"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[6].icon}
@@ -197,7 +193,7 @@ const WhyChooseUs = () => {
                   {features[6].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6 text-[#111827]">
                   {features[6].desc}
                 </p>
               </Link>
@@ -205,7 +201,7 @@ const WhyChooseUs = () => {
               {/* Card 8 */}
               <Link
                 to="/long-term-partnerships"
-                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+                className="group bg-white rounded-3xl border border-[#E9EEF5] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 min-h-[240px] md:min-h-[260px] px-6 py-8 flex flex-col items-center justify-center text-center"
               >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[7].icon}
@@ -215,7 +211,7 @@ const WhyChooseUs = () => {
                   {features[7].title}
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-6 text-gray-500">
+                <p className="mt-1 text-[13px] leading-6  text-[#111827]">
                   {features[7].desc}
                 </p>
               </Link>

@@ -19,7 +19,7 @@ const About = () => {
 
       {/* Hero Section */}
 
-      <section className="bg-[#061326] pt-44 pb-28">
+      <section className="bg-[#061326] pt-36 pb-28">
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -27,13 +27,13 @@ const About = () => {
             ABOUT GLOBALTAIL
           </p>
 
-          <h1 className="mt-4 text-white text-[48px] lg:text-[58px] font-bold leading-tight max-w-3xl">
+          <h1 className="mt-3 text-white text-[52px] font-bold leading-tight">
             Building Sustainable
             <br />
             IT Solutions Worldwide
           </h1>
 
-          <p className="mt-6 max-w-2xl text-[#C8D3E2] text-[17px] leading-8">
+          <p className="mt-5 max-w-2xl text-[#C8D3E2] text-[17px] leading-8">
             Globaltail is a trusted supplier of refurbished IT equipment,
             helping businesses source quality technology while promoting a
             sustainable future through responsible IT asset management.
@@ -42,8 +42,6 @@ const About = () => {
         </div>
 
       </section>
-
-      {/* Part 2 Here */}
       {/* Company Story */}
 
 <section className="bg-white py-20">
@@ -293,7 +291,7 @@ const About = () => {
         <img
           src={services2}
           alt="Why Choose Globaltail"
-          className="w-full h-[520px] object-cover rounded-3xl"
+          className="w-full h-[550px] object-cover rounded-3xl"
         />
 
       </div>

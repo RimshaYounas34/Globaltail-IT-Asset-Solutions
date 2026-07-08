@@ -120,7 +120,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <HiOutlinePhone className="text-[#0B84FF] text-[20px]" />
                 <span className="hover:text-white transition cursor-pointer">
-                  +923111734194
+                  +923427790441
                 </span>
               </div>
 

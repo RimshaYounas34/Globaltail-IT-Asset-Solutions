@@ -92,24 +92,57 @@ function Contact() {
     <>
       <Navbar />
 
-      {/* Hero */}
+     {/* Hero */}
 
-      <section className="bg-[#061326] pt-44 pb-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="uppercase tracking-[2px] text-[#0B84FF] font-bold text-sm">
-            GET IN TOUCH
-          </p>
+<section className="relative overflow-hidden bg-[#061326] pt-20 pb-24">
 
-          <h1 className="mt-3 text-white text-[52px] font-bold">
-            Contact Us
-          </h1>
+  {/* Background Effects */}
 
-          <p className="mt-5 max-w-2xl text-[#C7D2E2] text-[17px] leading-8">
-            We'd love to hear from you. Whether you're looking to buy,
-            sell, or partner with Globaltail, our team is here to help.
-          </p>
-        </div>
-      </section>
+  <div className="absolute -top-20 right-0 w-72 h-72 rounded-full bg-[#0B84FF]/10 blur-3xl"></div>
+
+  <div className="absolute -bottom-16 left-0 w-60 h-60 rounded-full bg-cyan-400/10 blur-3xl"></div>
+
+  <div className="relative max-w-7xl mx-auto px-6 text-center">
+
+    <span className="mt-5 inline-block rounded-full border border-[#0B84FF]/30 bg-[#0B84FF]/10 px-5 py-2 text-[13px] font-semibold uppercase tracking-[2px] text-[#5EB3FF]">
+      Contact Globaltail
+    </span>
+
+    <h1 className="mt-6 text-white text-[42px] md:text-[56px] lg:text-[60px] font-bold leading-[1.15]">
+      Let's Build Something
+      <br />
+      Great Together
+    </h1>
+
+    <p className="mt-6 max-w-2xl mx-auto text-[#C8D3E2] text-[17px] leading-8">
+      Whether you're looking to buy refurbished IT equipment, sell retired
+      assets, or establish a long-term partnership, our team is ready to
+      assist you with reliable and professional solutions.
+    </p>
+
+    <div className="mt-10 flex flex-wrap justify-center gap-4">
+
+      <a
+        href="#contact-form"
+        className="inline-flex h-14 items-center justify-center rounded-xl bg-[#0B84FF] px-8 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#086dd6]"
+      >
+        Send Message
+      </a>
+
+      <a
+        href="https://wa.me/923111734194"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex h-14 items-center justify-center rounded-xl border border-white/20 px-8 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#061326]"
+      >
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Contact Form */}
       <section className="bg-[#F7FAFF] py-24 -mt-12">

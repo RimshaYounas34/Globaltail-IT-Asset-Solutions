@@ -91,7 +91,7 @@ const Services = () => {
         </h3>
 
         <p className="mt-4 text-[#5B6472] leading-7">
-          Professional testing, repair and grading to ensure premium quality.
+          Professional testing, grading and refurbishment to ensure reliable performance.
         </p>
 
         <div className="mt-8 flex justify-end">
@@ -129,14 +129,10 @@ const Services = () => {
         <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl">
           <HiOutlineGlobeAlt />
         </div>
-
-        <h3 className="mt-8 text-[22px] font-bold text-[#071423]">
-          Global Distribution
-        </h3>
-
-        <p className="mt-4 text-[#5B6472] leading-7">
-          Safe and reliable worldwide delivery for businesses and partners.
-        </p>
+<h3 className="mt-8 min-h-[60px] text-[20px] font-bold text-[#071423]">
+  Local & Global Delivery
+</h3>
+<p className="-mt-3 text-[#5B6472] leading-7"> Safe and reliable worldwide delivery for businesses and partners. </p>
 
         <div className="mt-8 flex justify-end">
           <FiChevronRight className="text-[22px] group-hover:text-[#0B84FF]" />
@@ -185,9 +181,7 @@ const Services = () => {
         </h2>
 
         <p className="mt-6 text-[#5B6472] leading-8">
-          We combine technical expertise, certified refurbishment and
-          global logistics to deliver dependable IT solutions for
-          businesses of every size.
+        We deliver premium-quality IT products to local and global customers through reliable sourcing, certified refurbishment and dependable logistics.
         </p>
 
         <div className="mt-10 space-y-8">
@@ -247,11 +241,11 @@ const Services = () => {
             <div>
 
               <h3 className="text-[21px] font-bold text-[#071423]">
-                Worldwide Distribution
+                Local & Global Delivery
               </h3>
 
               <p className="mt-2 text-[#5B6472] leading-7">
-                Fast and reliable shipping to partners worldwide.
+                Delivering premium-quality IT products to local and global customers with reliability and value.
               </p>
 
             </div>
@@ -304,8 +298,7 @@ const Services = () => {
     </h2>
 
     <p className="mt-5 max-w-3xl mx-auto text-center text-[#5B6472] leading-8">
-      From sourcing to worldwide delivery, every step follows a
-      professional and quality-focused process.
+      From sourcing and refurbishment to local and global delivery, every step follows a professional and quality-focused process.
     </p>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
@@ -393,7 +386,7 @@ const Services = () => {
         </h3>
 
         <p className="mt-3 text-[#5B6472] leading-7">
-          Safe packaging and fast worldwide shipping to your destination.
+          Safe packaging and reliable local and worldwide delivery to your destination.
         </p>
 
       </div>

@@ -14,7 +14,7 @@ const Process = () => {
         <p className="uppercase text-[#0B84FF] font-bold text-sm">
           HOW IT WORKS
         </p>
-<h2 className="mt-2 text-[28px] sm:text-[35px] lg:text-[42px] font-bold text-[#071423] leading-tight">
+<h2 className="mt-2 text-[28px] sm:text-[35px] lg:text-[40px] font-bold text-[#071423] leading-tight">
           Our Simple 4 Step Process
         </h2>
 
@@ -89,7 +89,7 @@ const Process = () => {
 
             <div>
               <h3 className="text-[15px] font-bold text-[#071423]">
-                3. Inventory & Quality Check
+                3. Quality Check
               </h3>
 
               <p className="mt-2 text-[15px] leading-7 text-[#5B6472]">
@@ -119,15 +119,12 @@ const Process = () => {
 
             <div>
               <h3 className="text-[15px] font-bold text-[#071423]">
-                4. Deliver Worldwide
+                4. Deliver Local & Global
               </h3>
 
               <p className="mt-2 text-[15px] leading-7 text-[#5B6472]">
-                We ship quality products
-                <br />
-                to our partners around
-                <br />
-                the world.
+                Delivering premium-quality<br/> IT products to local and global customers.
+              
               </p>
             </div>
 

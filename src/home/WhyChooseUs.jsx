@@ -1,5 +1,3 @@
-import whyChooseImg from "../assets/why-choose.jpg";
-
 import {
   HiOutlineClipboardDocumentList,
   HiOutlineShieldCheck,
@@ -10,8 +8,7 @@ import {
   HiOutlineCube,
   HiOutlineUsers,
 } from "react-icons/hi2";
-
-import { BsPatchCheckFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -31,8 +28,8 @@ const features = [
   },
   {
     icon: <HiOutlineTruck />,
-    title: "Global Shipping",
-    desc: "Fast & reliable worldwide delivery",
+    title: " Local & Global Delivery",
+    desc: "Fast, reliable local and worldwide delivery.",
   },
   {
     icon: <HiOutlineArrowPath />,
@@ -60,37 +57,9 @@ const WhyChooseUs = () => {
   return (
     <section className="bg-[#F7FAFF] py-10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-[450px_780px] gap-8 items-start">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto text-center"></div>
           {/* Left Side */}
-
-          <div className="relative -ml-12">
-            <img
-              src={whyChooseImg}
-              alt="Warehouse"
-              className="w-full h-[280px] sm:h-[350px] lg:h-[450px] object-contain rounded-2xl mt-12"
-            />
-            <div
-              className="absolute bottom-3 right-3 lg:-bottom-10 lg:right-0 bg-white rounded-2xl shadow-xl
-w-[130px] h-[165px]
-sm:w-[150px] sm:h-[190px]
-lg:w-[180px] lg:h-[220px]
-flex flex-col items-center justify-center p-3"
-            >
-              <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full bg-[#EEF5FF] flex items-center justify-center">
-                <BsPatchCheckFill className="text-[#0B84FF] text-3xl sm:text-4xl lg:text-5xl" />
-              </div>
-              <h3 className="mt-3 text-[12px] sm:text-[16px] lg:text-[20px] font-extrabold text-center leading-tight">
-                QUALITY
-                <br />
-                TESTED
-              </h3>
-              <p className="mt-2 text-center text-gray-500 text-[9px] sm:text-xs lg:text-sm leading-4 lg:leading-6">
-                DATA WIPED
-                <br />
-                READY TO DEPLOY
-              </p>
-            </div>
-          </div>
 
           {/* Right Side */}
 
@@ -99,7 +68,7 @@ flex flex-col items-center justify-center p-3"
               WHY WORK WITH GLOBALTAIL
             </p>
 
-            <h2 className="mt-3 text-[20px] lg:text-[35px] font-bold text-[#03070c] leading-[1.1]">
+            <h2 className="mt-3 text-[20px] lg:text-[40px] font-bold text-[#03070c] leading-[1.1]">
               Reliable. Responsible. Results Driven.
             </h2>
 
@@ -110,7 +79,10 @@ flex flex-col items-center justify-center p-3"
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
               {/* Card 1 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/bulk-purchasing"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[0].icon}
                 </div>
@@ -122,10 +94,12 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[0].desc}
                 </p>
-              </div>
-
+              </Link>
               {/* Card 2 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/quality-refurbishment"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[1].icon}
                 </div>
@@ -137,10 +111,13 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[1].desc}
                 </p>
-              </div>
+              </Link>
 
               {/* Card 3 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/data-security"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[2].icon}
                 </div>
@@ -152,10 +129,13 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[2].desc}
                 </p>
-              </div>
+              </Link>
 
               {/* Card 4 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+             <Link
+                to="/local-global-delivery"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[3].icon}
                 </div>
@@ -167,9 +147,12 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[3].desc}
                 </p>
-              </div>
+              </Link>
               {/* Card 5 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/sustainable-approach"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[4].icon}
                 </div>
@@ -181,10 +164,13 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[4].desc}
                 </p>
-              </div>
+              </Link>
 
               {/* Card 6 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/competitive-pricing"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[5].icon}
                 </div>
@@ -196,10 +182,13 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[5].desc}
                 </p>
-              </div>
+              </Link>
 
               {/* Card 7 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/consistent-supply"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[6].icon}
                 </div>
@@ -211,10 +200,13 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[6].desc}
                 </p>
-              </div>
+              </Link>
 
               {/* Card 8 */}
-              <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center">
+              <Link
+                to="/long-term-partnerships"
+                className="block bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 h-[185px] px-5 flex flex-col items-center justify-center text-center"
+              >
                 <div className="w-16 h-16 rounded-full bg-[#EEF5FF] flex items-center justify-center text-[#0B84FF] text-3xl mb-5">
                   {features[7].icon}
                 </div>
@@ -226,7 +218,7 @@ flex flex-col items-center justify-center p-3"
                 <p className="mt-1 text-[13px] leading-6 text-gray-500">
                   {features[7].desc}
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

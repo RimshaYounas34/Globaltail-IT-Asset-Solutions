@@ -7,10 +7,20 @@ import Products from "../pages/Products";
 import Partnerships from "../pages/Partnerships";
 import Contact from "../pages/Contact";
 import SellAssets from "../pages/SellAssets";
+import BulkPurchasing from "../pages/BulkPurchasing";
+import QualityRefurbishment from "../pages/QualityRefurbishment";
+import DataSecurity from "../pages/DataSecurity";
+import LocalGlobalDelivery from "../pages/LocalGlobalDelivery";
+import SustainableApproach from "../pages/SustainableApproach";
+ import CompetitivePricing from "../pages/CompetitivePricing";
+import ConsistentSupply from "../pages/ConsistentSupply";
+import LongTermPartnerships from "../pages/LongTermPartnerships";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
 
@@ -25,6 +35,23 @@ const AppRoutes = () => {
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/sell-assets" element={<SellAssets />} />
+        <Route path="/bulk-purchasing" element={<BulkPurchasing />} />
+        <Route
+          path="/quality-refurbishment"
+          element={<QualityRefurbishment />}
+        />
+        <Route path="/data-security" element={<DataSecurity />} />
+        <Route
+          path="/local-global-delivery"
+          element={<LocalGlobalDelivery />}
+        />
+        <Route path="/sustainable-approach" element={<SustainableApproach />} />
+        <Route path="/competitive-pricing" element={<CompetitivePricing />} />
+        <Route path="/consistent-supply" element={<ConsistentSupply />} />
+        <Route
+          path="/long-term-partnerships"
+          element={<LongTermPartnerships />}
+        />
       </Routes>
     </BrowserRouter>
   );

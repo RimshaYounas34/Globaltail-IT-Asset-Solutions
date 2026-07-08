@@ -21,7 +21,7 @@ const CTA = () => {
 
 <div>
 
-<h2 className="text-white text-[30px] sm:text-[38px] lg:text-[48px] font-bold leading-tight">
+<h2 className="text-white text-[30px] sm:text-[38px] lg:text-[40px] font-bold leading-tight">
     Ready to Work With Globaltail?
   </h2>
 

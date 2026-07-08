@@ -43,13 +43,10 @@ const Products = () => {
 
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-8">
           <div>
-            <p className="uppercase tracking-[1px] text-[#0B84FF] font-bold text-sm">
-              PRODUCTS WE HANDLE
-            </p>
+            <h2 className="mt-2 text-[30px] sm:text-[38px] lg:text-[40px] font-bold leading-tight text-[#071423]">
+  Products We Handle
+</h2>
 
-            <h2 className="mt-2 text-[30px] sm:text-[38px] lg:text-[48px] font-bold leading-tight text-[#071423]">
-              Quality Refurbished IT Equipment
-            </h2>
           </div>
 
           <Link

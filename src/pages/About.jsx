@@ -361,7 +361,7 @@ const About = () => {
             <div>
 
               <h3 className="font-bold text-[20px] text-[#071423]">
-                Fast Global Shipping
+                Fast Local & Global Shipping
               </h3>
 
               <p className="mt-2 text-[#5B6472] leading-7">

@@ -1,24 +1,20 @@
 import Navbar from "../layout/Navbar";
 import CTA from "../home/CTA";
 import Footer from "../layout/Footer";
-import dell1 from "../assets/dell1.jpg";
-import dell2 from "../assets/dell2.jpg";
-import dell3 from "../assets/dell3.jpg";
-import dell4 from "../assets/dell4.jpg";
-import hp1 from "../assets/hp1.jpg";
-import hp2 from "../assets/hp2.jpg";
-import hp3 from "../assets/hp3.jpg";
-import hp4 from "../assets/hp4.jpg";
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
-import monitor1 from "../assets/monitor1.jpg";
-import monitor2 from "../assets/monitor2.jpg";
-import monitor3 from "../assets/monitor3.jpg";
-import monitor4 from "../assets/monitor4.jpg";
-import accesories1 from "../assets/accesories1.jpg";
-import accesories2 from "../assets/accesories2.jpg";
-import accesories3 from "../assets/accesories3.jpg";
-import accesories4 from "../assets/accesories4.jpg";
+import { useState,useRef } from "react";
+import assets1 from "../assets/assets1.png";
+import assets2 from "../assets/assets2.jpg";
+import assets3 from "../assets/assets3.jpg";
+import assets4 from "../assets/assets4.jpg";
+import assets5 from "../assets/assets5.jpg";
+import assets6 from "../assets/assets6.jpg";
+import assets7 from "../assets/assets7.jpg";
+import assets8 from "../assets/assets8.jpg";
+
+
+
+
+
 
 
 const SellAssets = () => {
@@ -121,6 +117,14 @@ const handleChange = (e) => {
     [e.target.name]: e.target.value,
   });
 };
+const formRef = useRef(null);
+
+const scrollToForm = () => {
+  formRef.current?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
   return (
     <>
       <Navbar />
@@ -152,464 +156,194 @@ const handleChange = (e) => {
       </section>
 
       {/* Part 2 */}
-      {/* Dell Laptops */}
+     {/* ================= WHAT WE BUY ================= */}
 
 <section className="bg-white py-20">
-
   <div className="max-w-7xl mx-auto px-6">
 
-    <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px] text-center">
-      DELL LAPTOPS
+    <p className="uppercase text-[#0B84FF] font-bold tracking-[2px] text-sm">
+      SELL YOUR IT ASSETS
     </p>
 
-    <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
-      We Buy Dell Laptops
+    <h2 className="mt-3 text-[44px] font-bold text-[#071423]">
+      What We Buy
     </h2>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+    {/* Images */}
 
-      {/* Card 1 */}
 
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
 
-        <img
-          src={dell1}
-          alt="Dell Latitude 5400"
-          className="w-full h-[260px] object-cover"
-        />
+  <img
+    src={assets1}
+    alt="IT Asset 1"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-        <div className="p-6">
+  <img
+    src={assets2}
+    alt="IT Asset 2"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            Dell Latitude 5400
-          </h3>
+  <img
+    src={assets3}
+    alt="IT Asset 3"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-          <p className="mt-2 text-[#5B6472]">
-            Business Laptop
-          </p>
+  <img
+    src={assets4}
+    alt="IT Asset 4"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-        </div>
+  <img
+    src={assets5}
+    alt="IT Asset 5"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-      </div>
+  <img
+    src={assets6}
+    alt="IT Asset 6"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-      {/* Card 2 */}
+  <img
+    src={assets7}
+    alt="IT Asset 7"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
+  <img
+    src={assets8}
+    alt="IT Asset 8"
+    onClick={scrollToForm}
+  className="cursor-pointer rounded-3xl h-[280px] w-full object-cover shadow-lg hover:scale-105 transition duration-300"
+  />
 
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+</div>
 
-        <img
-          src={dell2}
-          alt="Dell Latitude 7490"
-          className="w-full h-[260px] object-cover"
-        />
+    <p className="mt-10 text-[#5B6472] leading-8 text-[17px]">
+      At Globaltail, we purchase IT equipment in quantities ranging
+      from single pallets to full truckloads, offering competitive
+      pricing and a seamless buying process.
+    </p>
 
-        <div className="p-6">
+    {/* We Buy */}
 
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            Dell Latitude 7490
-          </h3>
+    <div className="mt-12">
 
-          <p className="mt-2 text-[#5B6472]">
-            Business Laptop
-          </p>
+      <h3 className="text-[30px] font-bold text-[#071423]">
+        We Buy
+      </h3>
 
-        </div>
+      <ul className="mt-6 grid md:grid-cols-2 gap-y-4 text-[#5B6472] text-[18px] list-disc pl-6">
 
-      </div>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Laptops (All Brands & Grades)
+  </li>
 
-      {/* Card 3 */}
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Desktop Computers
+  </li>
 
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    All-in-One PCs
+  </li>
 
-        <img
-          src={dell3}
-          alt="Dell Precision 5530"
-          className="w-full h-[260px] object-cover"
-        />
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Monitors
+  </li>
 
-        <div className="p-6">
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Flat-Screen TVs
+  </li>
 
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            Dell Precision 5530
-          </h3>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Servers
+  </li>
 
-          <p className="mt-2 text-[#5B6472]">
-            Mobile Workstation
-          </p>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Network Switches
+  </li>
 
-        </div>
-
-      </div>
-
-      {/* Card 4 */}
-
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={dell4}
-          alt="Dell XPS 13"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            Dell XPS 13
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Premium Ultrabook
-          </p>
-
-        </div>
-
-      </div>
+</ul>
 
     </div>
 
-  </div>
+    {/* Components */}
 
-</section>
-{/* Monitors */}
+    <div className="mt-16">
 
-<section className="bg-white py-20">
+      <h3 className="text-[30px] font-bold text-[#071423]">
+        IT Components & Accessories
+      </h3>
 
-  <div className="max-w-7xl mx-auto px-6">
+      <ul className="mt-6 grid md:grid-cols-2 gap-y-4 text-[#5B6472] text-[18px] list-disc pl-6">
 
-    <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px] text-center">
-      MONITORS
-    </p>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    AC Power Adapters & Chargers
+  </li>
 
-    <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
-      We Buy Monitors
-    </h2>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    RAM (Memory Modules)
+  </li>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Hard Disk Drives (HDDs)
+  </li>
 
-      {/* Card 1 */}
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Solid State Drives (SSDs)
+  </li>
 
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Power Cables
+  </li>
 
-        <img
-          src={monitor1}
-          alt="Dell Monitor"
-          className="w-full h-[260px] object-cover"
-        />
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Data Cables
+  </li>
 
-        <div className="p-6">
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Docking Stations
+  </li>
 
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            Dell P2419H
-          </h3>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Keyboards & Mice
+  </li>
 
-          <p className="mt-2 text-[#5B6472]">
-            24" Professional Monitor
-          </p>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Webcams
+  </li>
 
-        </div>
+  <li onClick={scrollToForm} className="cursor-pointer hover:text-[#0B84FF] transition">
+    Other IT Accessories
+  </li>
 
-      </div>
-
-      {/* Card 2 */}
-
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={monitor2}
-          alt="HP Monitor"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            HP EliteDisplay E243
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Business Monitor
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* Card 3 */}
-
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={monitor3}
-          alt="Lenovo Monitor"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            Lenovo ThinkVision
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Full HD Monitor
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* Card 4 */}
-
-      <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={monitor4}
-          alt="LG Monitor"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            LG 24MP400
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            IPS LED Monitor
-          </p>
-
-        </div>
-
-      </div>
+</ul>
 
     </div>
 
-  </div>
-
-</section>
-{/* HP Laptops */}
-
-<section className="bg-[#F7FAFF] py-20">
-
-  <div className="max-w-7xl mx-auto px-6">
-
-    <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px] text-center">
-      HP LAPTOPS
+    <p className="mt-12 text-[#5B6472] leading-8 text-[17px]">
+      Whether your equipment is used, off-lease, surplus, or retired,
+      Globaltail provides a reliable and professional purchasing
+      service for businesses worldwide.
     </p>
-
-    <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
-      We Buy HP Laptops
-    </h2>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
-
-      {/* Card 1 */}
-
-      <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={hp1}
-          alt="HP EliteBook 840 G6"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            HP EliteBook 840 G6
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Business Laptop
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* Card 2 */}
-
-      <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={hp2}
-          alt="HP EliteBook 850 G5"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            HP EliteBook 850 G5
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Business Laptop
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* Card 3 */}
-
-      <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={hp3}
-          alt="HP ProBook 450 G7"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            HP ProBook 450 G7
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Business Laptop
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* Card 4 */}
-
-      <div className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-xl transition duration-300">
-
-        <img
-          src={hp4}
-          alt="HP ZBook 15 G5"
-          className="w-full h-[260px] object-cover"
-        />
-
-        <div className="p-6">
-
-          <h3 className="text-[20px] font-bold text-[#071423]">
-            HP ZBook 15 G5
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Mobile Workstation
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-{/* ================= ACCESSORIES ================= */}
-
-<section className="bg-[#F7FAFF] py-20">
-  <div className="max-w-7xl mx-auto px-6">
-
-    <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px] text-center">
-      ACCESSORIES
-    </p>
-
-    <h2 className="mt-3 text-center text-[42px] font-bold text-[#071423]">
-      We Buy IT Accessories
-    </h2>
-
-    <p className="mt-4 max-w-3xl mx-auto text-center text-[#5B6472] leading-8">
-      We purchase genuine IT accessories in bulk including docking stations,
-      keyboards, mice, chargers and business peripherals.
-    </p>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
-
-      {/* Card 1 */}
-
-      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-        <img
-          src={accesories1}
-          alt="Docking Station"
-          className="w-full h-64 object-cover"
-        />
-
-        <div className="p-6">
-          <h3 className="text-xl font-bold text-[#071423]">
-            Docking Stations
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Dell • HP • Lenovo
-          </p>
-        </div>
-      </div>
-
-      {/* Card 2 */}
-
-      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-        <img
-          src={accesories2}
-          alt="Keyboard & Mouse"
-          className="w-full h-64 object-cover"
-        />
-
-        <div className="p-6">
-          <h3 className="text-xl font-bold text-[#071423]">
-            Keyboard & Mouse
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Wired & Wireless
-          </p>
-        </div>
-      </div>
-
-      {/* Card 3 */}
-
-      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-        <img
-          src={accesories3}
-          alt="Laptop Chargers"
-          className="w-full h-64 object-cover"
-        />
-
-        <div className="p-6">
-          <h3 className="text-xl font-bold text-[#071423]">
-            Laptop Chargers
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Original Power Adapters
-          </p>
-        </div>
-      </div>
-
-      {/* Card 4 */}
-
-      <div className="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-        <img
-          src={accesories4}
-          alt="Headsets & Webcams"
-          className="w-full h-64 object-cover"
-        />
-
-        <div className="p-6">
-          <h3 className="text-xl font-bold text-[#071423]">
-            Headsets & Webcams
-          </h3>
-
-          <p className="mt-2 text-[#5B6472]">
-            Business Accessories
-          </p>
-        </div>
-      </div>
-
-    </div>
 
   </div>
 </section>
 {/* Sell Form */}
 
-<section className="bg-white py-20">
+<section  ref={formRef}  className="bg-white py-20 ">
 
   <div className="max-w-5xl mx-auto px-6">
 

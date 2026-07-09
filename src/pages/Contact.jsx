@@ -1,6 +1,5 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { LuMessageCircle } from "react-icons/lu";
 
 import Navbar from "../layout/Navbar";
 
@@ -59,17 +58,17 @@ function Contact() {
     setLoading(true);
 
     emailjs
-  .send(
-    "service_pksz01e",
-    "template_szg0okj",
-    {
-      user_name: formData.name,
-      user_email: formData.email,
-      subject: formData.subject,
-      message: formData.message,
-    },
-    "50biiev4TaRa0_WRA"
-  )
+      .send(
+        "service_pksz01e",
+        "template_szg0okj",
+        {
+          user_name: formData.name,
+          user_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "50biiev4TaRa0_WRA",
+      )
       .then(() => {
         showNotification("success", "Message Sent Successfully!");
 
@@ -92,68 +91,50 @@ function Contact() {
     <>
       <Navbar />
 
-     {/* Hero */}
+      {/* Hero */}
 
-<section className="relative overflow-hidden bg-[#061326] pt-20 pb-24">
+      <section className="relative overflow-hidden bg-[#061326] pt-20 pb-24">
+        {/* Background Effects */}
 
-  {/* Background Effects */}
+        <div className="absolute -top-20 right-0 w-72 h-72 rounded-full bg-[#0B84FF]/10 blur-3xl"></div>
 
-  <div className="absolute -top-20 right-0 w-72 h-72 rounded-full bg-[#0B84FF]/10 blur-3xl"></div>
+        <div className="absolute -bottom-16 left-0 w-60 h-60 rounded-full bg-cyan-400/10 blur-3xl"></div>
 
-  <div className="absolute -bottom-16 left-0 w-60 h-60 rounded-full bg-cyan-400/10 blur-3xl"></div>
+        <div className="relative max-w-7xl mx-auto px-6 text-center">
+          <span className="mt-5 inline-block rounded-full border border-[#0B84FF]/30 bg-[#0B84FF]/10 px-5 py-2 text-[13px] font-semibold uppercase tracking-[2px] text-[#5EB3FF]">
+            Contact Globaltail
+          </span>
 
-  <div className="relative max-w-7xl mx-auto px-6 text-center">
+          <h1 className="mt-6 text-white text-[42px] md:text-[56px] lg:text-[60px] font-bold leading-[1.15]">
+            Let's Build Something
+            <br />
+            Great Together
+          </h1>
 
-    <span className="mt-5 inline-block rounded-full border border-[#0B84FF]/30 bg-[#0B84FF]/10 px-5 py-2 text-[13px] font-semibold uppercase tracking-[2px] text-[#5EB3FF]">
-      Contact Globaltail
-    </span>
+          <p className="mt-6 max-w-2xl mx-auto text-[#C8D3E2] text-[17px] leading-8">
+            Whether you're looking to buy refurbished IT equipment, sell retired
+            assets, or establish a long-term partnership, our team is ready to
+            assist you with reliable and professional solutions.
+          </p>
 
-    <h1 className="mt-6 text-white text-[42px] md:text-[56px] lg:text-[60px] font-bold leading-[1.15]">
-      Let's Build Something
-      <br />
-      Great Together
-    </h1>
-
-    <p className="mt-6 max-w-2xl mx-auto text-[#C8D3E2] text-[17px] leading-8">
-      Whether you're looking to buy refurbished IT equipment, sell retired
-      assets, or establish a long-term partnership, our team is ready to
-      assist you with reliable and professional solutions.
-    </p>
-
-    <div className="mt-10 flex flex-wrap justify-center gap-4">
-
-      <a
-        href="#contact-form"
-        className="inline-flex h-14 items-center justify-center rounded-xl bg-[#0B84FF] px-8 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#086dd6]"
-      >
-        Send Message
-      </a>
-
-      <a
-        href="https://wa.me/923111734194"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex h-14 items-center justify-center rounded-xl border border-white/20 px-8 font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#061326]"
-      >
-        WhatsApp Us
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="#contact-form"
+              className="inline-flex h-14 items-center justify-center rounded-xl bg-[#0B84FF] px-8 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#086dd6]"
+            >
+              Send Message
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Form */}
       <section className="bg-[#F7FAFF] py-24 -mt-12">
         <div className="max-w-3xl mx-auto px-6">
-
           {notification.show && (
             <div
               className={`mb-8 rounded-xl p-4 text-center text-white font-semibold ${
-                notification.type === "success"
-                  ? "bg-green-500"
-                  : "bg-red-500"
+                notification.type === "success" ? "bg-green-500" : "bg-red-500"
               }`}
             >
               {notification.message}
@@ -161,7 +142,6 @@ function Contact() {
           )}
 
           <div className="bg-white rounded-3xl shadow-xl p-10 md:p-12">
-
             <p className="uppercase text-[#0B84FF] font-bold text-sm tracking-[1px]">
               SEND MESSAGE
             </p>
@@ -176,9 +156,7 @@ function Contact() {
             </p>
 
             <form onSubmit={sendMessage} className="mt-10 space-y-6">
-
               <div className="grid md:grid-cols-2 gap-6">
-
                 <input
                   type="text"
                   name="name"
@@ -196,7 +174,6 @@ function Contact() {
                   onChange={handleChange}
                   className="h-14 rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
                 />
-
               </div>
 
               <input
@@ -217,34 +194,20 @@ function Contact() {
                 className="w-full rounded-xl border border-[#D8E2EF] p-5 outline-none resize-none focus:border-[#0B84FF]"
               />
 
-              <div className="grid sm:grid-cols-2 gap-4 pt-2">
-
+              <div className="pt-2">
                 <button
                   type="submit"
                   disabled={loading}
-                  className="h-14 rounded-xl bg-[#0B84FF] hover:bg-[#006FE6] text-white font-semibold transition"
+                  className="w-full h-14 rounded-xl bg-[#0B84FF] hover:bg-[#006FE6] text-white font-semibold transition"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
-
-                <a
-                  href="https://wa.me/923111734194?text=Assalam%20o%20Alaikum,%20I%20want%20to%20know%20about%20your%20services."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-14 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-semibold flex items-center justify-center gap-3 transition"
-                >
-                  <LuMessageCircle size={22} />
-                  WhatsApp
-                </a>
-
               </div>
-
             </form>
 
             <p className="mt-8 text-center text-[14px] text-[#6B7280]">
               We usually respond within 24 hours.
             </p>
-
           </div>
         </div>
       </section>

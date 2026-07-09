@@ -430,9 +430,25 @@ const scrollToForm = () => {
   onChange={handleChange}
   className="h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
 >
-            <option value="">Select Brand</option>
-<option value="Dell">Dell</option>
-<option value="HP">HP</option>
+           <option value="">Select Asset</option>
+<option value="Laptops (All Brands & Grades)">Laptops (All Brands & Grades)</option>
+<option value="Desktop Computers">Desktop Computers</option>
+<option value="All-in-One PCs">All-in-One PCs</option>
+<option value="Monitors">Monitors</option>
+<option value="Flat-Screen TVs">Flat-Screen TVs</option>
+<option value="Servers">Servers</option>
+<option value="Network Switches">Network Switches</option>
+<option value="IT Components & Accessories">IT Components & Accessories</option>
+<option value="AC Power Adapters & Chargers">AC Power Adapters & Chargers</option>
+<option value="RAM (Memory Modules)">RAM (Memory Modules)</option>
+<option value="Hard Disk Drives (HDDs)">Hard Disk Drives (HDDs)</option>
+<option value="Solid State Drives (SSDs)">Solid State Drives (SSDs)</option>
+<option value="Power Cables">Power Cables</option>
+<option value="Data Cables">Data Cables</option>
+<option value="Docking Stations">Docking Stations</option>
+<option value="Keyboards & Mice">Keyboards & Mice</option>
+<option value="Webcams">Webcams</option>
+<option value="Other IT Accessories">Other IT Accessories</option>
           </select>
 
           <input
@@ -445,12 +461,12 @@ const scrollToForm = () => {
 />
         </div>
 
-        <input
+       <input
   type="text"
   name="model"
   value={formData.model}
   onChange={handleChange}
-  placeholder="Laptop Model (Example: Dell Latitude 5400)"
+  placeholder="Enter Product Model or Name"
   className="w-full h-[58px] rounded-xl border border-[#D8E2EF] px-5 outline-none focus:border-[#0B84FF]"
 />
 

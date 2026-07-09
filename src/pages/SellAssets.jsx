@@ -10,10 +10,7 @@ import assets5 from "../assets/assets5.png";
 import assets6 from "../assets/assets6.jpg";
 import assets7 from "../assets/assets7.jpg";
 import assets8 from "../assets/assets8.jpg";
-
-
-
-
+import emailjs from "@emailjs/browser";
 
 
 

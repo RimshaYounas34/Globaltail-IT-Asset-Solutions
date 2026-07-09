@@ -50,7 +50,7 @@ const Products = () => {
           </div>
 
           <Link
-            to="/sell-assets"
+            to="/products"
             className="w-full sm:w-auto bg-[#0B84FF] hover:bg-[#006FE6] text-white px-8 h-14 rounded-lg font-semibold flex items-center justify-center gap-3 transition duration-300"
           >
             VIEW ALL PRODUCTS
@@ -64,7 +64,7 @@ const Products = () => {
           {products.map((item, index) => (
             <Link
               key={index}
-              to="/sell-assets"
+              to="/products"
               className="group bg-white border border-[#ECEFF3] rounded-xl px-4 pt-3 pb-4 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-[190px] block"
             >
               <div className="h-[105px] flex items-center justify-center">

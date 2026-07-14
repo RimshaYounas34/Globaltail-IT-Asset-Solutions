@@ -1,27 +1,70 @@
+import logoIcon from "../assets/logo1.png";
+
 function Logo({ size = "md" }) {
-  const iconSize = size === "lg" ? "w-14 h-14" : "w-11 h-11";
-  const textSize = size === "lg" ? "text-[38px]" : "text-[22px]";
-  const tagSize = size === "lg" ? "text-sm" : "text-xs";
+  const isLarge = size === "lg";
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center">
+      {/* Logo */}
+      <img
+        src={logoIcon}
+        alt="GlobalTail Logo"
+        className={`object-contain ${
+          isLarge ? "w-[84px] h-[84px]" : "w-[68px] h-[68px]"
+        }`}
+      />
+
+      {/* Vertical Line */}
       <div
-        className={`${iconSize} shrink-0 rounded-full border-[3px] border-[#1677ff] flex items-center justify-center relative`}
-      >
-        <div className="w-[55%] h-[55%] rounded-full border-[3px] border-white" />
-        <div className="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#1677ff]" />
-      </div>
+        className={`bg-white/60 ${
+          isLarge
+            ? "ml-2 mr-5 h-[52px] w-[2px]"
+            : "ml-1 mr-4 h-[38px] w-[2px]"
+        }`}
+      />
 
-      <div>
-        <h1
-          className={`text-white ${textSize} font-extrabold tracking-wide leading-none`}
-        >
-          GLOBAL<span className="text-[#1677ff]">TAIL</span>
-        </h1>
+      {/* Text */}
+      <div className="flex flex-col">
+        {/* Title */}
+        <div className="flex items-end">
+          <h1
+            className={`font-extrabold leading-none ${
+              isLarge
+                ? "text-[38px] tracking-[0.5px]"
+                : "text-[20px] tracking-[0.3px]"
+            }`}
+          >
+            <span className="text-white">GLOBAL</span>
+            <span className="text-[#1D6CFF]">TAIL</span>
+          </h1>
 
-        <p className={`text-gray-300 ${tagSize} mt-1`}>
-          Responsible IT Asset Solutions
-        </p>
+          <span
+            className={`text-white font-semibold ml-2 ${
+              isLarge
+                ? "text-[12px] mb-[6px]"
+                : "text-[8px] mb-[3px]"
+            }`}
+          >
+            LLC
+          </span>
+        </div>
+
+        {/* Tagline */}
+        <div className="flex items-center mt-2">
+          <div className="w-7 h-[2px] bg-[#1D6CFF]" />
+
+          <p
+            className={`mx-3 uppercase text-white font-medium whitespace-nowrap ${
+              isLarge
+                ? "text-[10px] tracking-[3px]"
+                : "text-[6px] tracking-[2px]"
+            }`}
+          >
+            RESPONSIBLE IT ASSET SOLUTIONS
+          </p>
+
+          <div className="w-7 h-[2px] bg-[#1D6CFF]" />
+        </div>
       </div>
     </div>
   );

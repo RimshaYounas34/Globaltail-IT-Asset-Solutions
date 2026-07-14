@@ -11,8 +11,8 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#061326] text-white">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-14 lg:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[280px_1fr_1fr_1fr_260px] gap-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-5 py-14 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[380px_1fr_1fr_1fr_260px] gap-10">
           {/* Logo */}
 
           <div>
@@ -111,25 +111,11 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <HiOutlineEnvelope className="text-[#0B84FF] text-[20px]" />
                 <span className="hover:text-white transition cursor-pointer">
-                  TechKaam@gmail.com
+                  info@globaltail.com
                 </span>
               </div>
 
-              {/* Phone */}
-
-              <div className="flex items-center gap-3">
-                <HiOutlinePhone className="text-[#0B84FF] text-[20px]" />
-                <span className="hover:text-white transition cursor-pointer">
-                  +923427790441
-                </span>
-              </div>
-
-              {/* Address */}
-
-              <div className="flex items-center gap-3">
-                <HiOutlineMapPin className="text-[#0B84FF] text-[20px]" />
-                <span>Pakistan</span>
-              </div>
+             
             </div>
 
             {/* Social Icons */}

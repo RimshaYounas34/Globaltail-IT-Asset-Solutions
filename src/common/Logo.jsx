@@ -54,17 +54,16 @@ function Logo({ size = "md" }) {
         {/* Tagline */}
         <div className="flex items-center mt-1 md:mt-2">
           <div className="w-4 md:w-6 lg:w-7 h-[2px] bg-[#1D6CFF]" />
-
           <p
-            className={`mx-2 md:mx-3 uppercase text-white font-medium whitespace-nowrap ${
-              isLarge
-                ? "text-[7px] md:text-[8px] lg:text-[10px] tracking-[2px] md:tracking-[2.5px] lg:tracking-[3px]"
-                : "text-[4px] md:text-[5px] lg:text-[6px] tracking-[1px] md:tracking-[1.5px] lg:tracking-[2px]"
-            }`}
-          >
-            RESPONSIBLE IT ASSET SOLUTIONS
-          </p>
-
+  className={`mx-2 md:mx-3 uppercase text-white font-medium whitespace-nowrap ${
+    isLarge
+      ? "text-[10px] md:text-[10px] lg:text-[12px] tracking-[2px] md:tracking-[2.5px] lg:tracking-[3px]"
+      : "text-[7px] md:text-[7px] lg:text-[8px] tracking-[1px] md:tracking-[1.5px] lg:tracking-[2px]"
+  }`}
+>
+  RESPONSIBLE IT ASSET SOLUTIONS
+</p>
+          
           <div className="w-4 md:w-6 lg:w-7 h-[2px] bg-[#1D6CFF]" />
         </div>
       </div>

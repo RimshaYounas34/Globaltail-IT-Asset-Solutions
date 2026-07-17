@@ -71,8 +71,8 @@ const sendMessage = (e) => {
 
   emailjs
     .send(
-      "service_kmqww56",
-      "template_bb02pka",
+      "service_pksz01e",
+      "template_hqt4m9n",
       {
         company: formData.company,
         person: formData.person,
@@ -84,7 +84,7 @@ const sendMessage = (e) => {
         condition: formData.condition,
         message: formData.message,
       },
-      "vARhTg6jI9rtgLq_K"
+      "50biiev4TaRa0_WRA"
     )
     .then(() => {
       showNotification("success", "Request Sent Successfully!");

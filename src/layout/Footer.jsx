@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Logo */}
 
           <div>
-            <div className="scale-100 lg:scale-110 origin-left mt-2 lg:mt-4">
+            <div className="scale-100 lg:scale-95 origin-left mt-2 lg:mt-4">
               <Logo />
             </div>
           </div>
@@ -114,8 +114,6 @@ const Footer = () => {
                   info@globaltail.com
                 </span>
               </div>
-
-             
             </div>
 
             {/* Social Icons */}
